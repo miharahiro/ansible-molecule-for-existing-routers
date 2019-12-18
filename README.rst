@@ -42,7 +42,18 @@ Requirements
    .
    192.168.122.101	      r1
 
+- ssh user and password settings
 
+::
+
+   $ cat inventories/staging/group_vars/cisco.yml 
+   ansible_connection: network_cli
+   ansible_network_os: ios
+   ansible_user: xxx
+   ansible_password: xxx
+   ansible_ssh_password: xxx
+   
+   
 
 Setup procedures on ansible host
 =====================================
