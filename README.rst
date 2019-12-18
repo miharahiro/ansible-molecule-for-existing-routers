@@ -10,9 +10,11 @@ Requirements
 
 - The following software are ready on the ansible host.
 
--- ansible
--- paramiko
--- molecule
+  -- ansible
+
+  -- paramiko
+
+  -- molecule
 
 - Name resolution of routers
 
