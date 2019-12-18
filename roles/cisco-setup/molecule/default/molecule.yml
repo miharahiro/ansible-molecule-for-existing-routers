@@ -1,0 +1,26 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: delegated
+lint:
+  name: yamllint
+platforms:
+  - name: R1
+    groups:
+      - cisco
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+  inventory:
+    links:
+      group_vars:
+        ../../../../inventories/staging/group_vars/
+      host_vars:
+        ../../../../inventories/staging/host_vars/
+
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

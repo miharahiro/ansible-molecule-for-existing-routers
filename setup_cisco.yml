@@ -1,0 +1,5 @@
+---
+- name: Setup Cisco Router
+  hosts: cisco
+  roles:
+    - role: cisco-setup
