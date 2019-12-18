@@ -8,13 +8,13 @@ molecule against existing routers
 Requirements
 ================
 
-* The following software are ready on the ansible host.
+- The following software are ready on the ansible host.
 
-- ansible
-- paramiko
-- molecule
+-- ansible
+-- paramiko
+-- molecule
 
-* Name resolution of routers
+- Name resolution of routers
 
 ::
 
