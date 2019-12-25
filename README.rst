@@ -68,14 +68,19 @@ Install ansible, paramiko
    sudo subscription-manager repos --enable ansible-2-for-rhel-8-x86_64-rpms
    sudo dnf -y install ansible
 
-   pip3 install paramiko
+   pip3 install paramiko --user
 
 Install molecule
 ::
    
    dnf install  -y gcc python3-pip python3-devel openssl-devel libselinux-python3
-   pip3 install setuptools -U
-   pip3 install molecule
+   pip3 install setuptools -U --user
+   pip3 install molecule --user
+
+Tips: if you encounter "command timeout error",
+::
+
+   export ANSIBLE_PERSISTENT_COMMAND_TIMEOUT=60
 
 
 molecule test
